@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musia_musicalstructureapp.MainActivity">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/SongImageSizes"
+        android:layout_height="@dimen/SongImageSizes"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/interpretTopBottomMargin"
+        android:layout_marginTop="@dimen/interpretTopBottomMargin"
+        android:src="@drawable/alanisalbum" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bigTextMarginTop"
+        android:text="@string/song_name"
+        android:textStyle="bold"
+        android:textSize="@dimen/bigTextSize"
+        android:gravity="center_horizontal"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/interpretTopBottomMargin"
+        android:text="@string/album_name"
+        android:textStyle="italic"
+        android:textSize="@dimen/trackTextSize"
+        android:gravity="center_horizontal"
+         />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0:23"
+        android:layout_marginLeft="@dimen/timeLeftRightMargin"
+        android:layout_marginRight="@dimen/timeLeftRightMargin"
+        android:layout_weight="1"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorPrimary"
+        android:progressBackgroundTint="@color/colorPrimaryDark"
+        android:progress="25"
+        android:layout_weight="6"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/timeLeftRightMargin"
+        android:layout_marginRight="@dimen/timeLeftRightMargin"
+        android:text="10:00"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:padding="@dimen/descriptionBoxPadding"
+        android:text="@string/song_detail_activity_description"
+
+        />
+    <LinearLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+
+        <include layout="@layout/player_controls"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

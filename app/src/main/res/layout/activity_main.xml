@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musia_musicalstructureapp.MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:padding="@dimen/descriptionBoxPadding"
+        android:text="@string/main_activity_description"
+        android:id="@+id/textView" />
+    <Button
+        android:id="@+id/song_detail_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="@dimen/buttonMargin"
+        android:layout_marginRight="@dimen/buttonMargin"
+        android:text="Open song detail"
+        android:layout_marginTop="@dimen/buttonMargin" />
+    <Button
+        android:id="@+id/open_album_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_detail_btn"
+        android:layout_marginLeft="@dimen/buttonMargin"
+        android:layout_marginRight="@dimen/buttonMargin"
+        android:text="Show album content"
+        android:layout_marginTop="@dimen/buttonMargin" />
+
+    <Button
+        android:id="@+id/open_interpret_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_album_btn"
+        android:layout_marginLeft="@dimen/buttonMargin"
+        android:layout_marginRight="@dimen/buttonMargin"
+        android:text="Open Interpret"
+        android:layout_marginTop="@dimen/buttonMargin" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+
+         <include layout="@layout/player_controls"
+              />
+    </LinearLayout>
+
+
+</RelativeLayout>

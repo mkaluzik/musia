@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Musia</string>
+    <string name="main_activity_description">There are 3 activities in this Main activity. For purposes of this project they are accessible via buttons. In real app they would be triggered by taping on different parts of  View containing specific song name. Views will be listed in form of playlist in this Activity using Fragments. In order to make this description box as little annoying as possible I have applied alpha to it so that you can see what is behind in the app desing.</string>
+    <string name="about_interpret_activity_description">User tap on Interpret name in any activity will trigger call to this activity and all info about the interpret will be collected via JSON response from API. Collection of all albums of this Interpret will be delivered as additional info also via JSON. Tap on any of those album pictures will call Album details activity.</string>
+    <string name="song_detail_activity_description">"Once user taps on the song name in MainActivity details activity showing song and it progress is called and Song will start to be played. We have not yet learnt anything about playing audio files but I would try to use MediaPlayer framework here. "</string>
+    <string name="album_detail_activity_description">If user taps on Album name in Main activity or in Song Detail activity Album Details activity is opened. Here user can find album cover image and name specified via request on player API  via Network. List of songs in this album will be delivered in JSON response. By taping on one of the songs Song detail activity is called and song will be played.</string>
+    <string name="interpret_label">About interpret</string>
+    <string name="album_detail_label">Album detail</string>
+    <string name="song_detail_label">About this song</string>
+    <string name="about_alanis">Alanis Morissette has released a series of groundbreaking albums that have sold more than 60 million copies worldwide. She has won twelve Juno Awards, seven Grammy® Awards, and has also received an additional fourteen Grammy® nominations. Morissette\'s international debut album \"Jagged Little Pill\" remains the best-selling debut album by a female artist in the U.S. and is the highest selling debut album worldwide in music history. Morissette\'s subsequent five studio albums have all included a series of chart-topping singles. Her most recent release, \"Flavors of Entanglement\", was released in June 2008 and debuted in the U.S. in the Top 10 on Billboard\'s Top 200 album chart.</string>
+    <string name="about_album">Tracks:</string>
+    <string name="interpretName">Alanis Morisette</string>
+    <string name="albums_header">Albums:</string>
+    <string name="track_name">Track number X</string>
+    <string name="track_duration">8:00</string>
+    <string name="song_name">Song name</string>
+    <string name="album_name">Album name</string>
+    <string name="song_name_ironic">Alanis Morisette - Ironic</string>
+    <string name="playlist">Your playlist</string>
+    <string name="main_activity_name">Your playlist</string>
+
+
+
+</resources>

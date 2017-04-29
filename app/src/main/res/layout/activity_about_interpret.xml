@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musia_musicalstructureapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/rl_footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bigTextMarginTop"
+                android:gravity="center_horizontal"
+                android:text="@string/interpretName"
+                android:textSize="@dimen/bigTextSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/interpretImageSizes"
+                android:layout_height="@dimen/interpretImageSizes"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/interpretTopBottomMargin"
+                android:layout_marginTop="@dimen/interpretTopBottomMargin"
+                android:src="@drawable/alanisprofile" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/descTextPadding"
+                android:text="@string/about_alanis" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/albumsHeaderPadding"
+                android:text="@string/albums_header"
+                android:textSize="@dimen/albumsHeaderTextSize"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/cdImageMargin">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/cdImageDimens"
+                            android:layout_height="@dimen/cdImageDimens"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/cdImageMargin"
+                            android:src="@drawable/album_universal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/album_name"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/cdImageDimens"
+                            android:layout_height="@dimen/cdImageDimens"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/cdImageMargin"
+                            android:src="@drawable/album_universal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/album_name"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/cdImageDimens"
+                            android:layout_height="@dimen/cdImageDimens"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/cdImageMargin"
+                            android:src="@drawable/album_universal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/album_name"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/cdImageDimens"
+                            android:layout_height="@dimen/cdImageDimens"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/cdImageMargin"
+                            android:src="@drawable/album_universal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/album_name"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/cdImageDimens"
+                            android:layout_height="@dimen/cdImageDimens"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/cdImageMargin"
+                            android:src="@drawable/album_universal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/album_name"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:padding="@dimen/descriptionBoxPadding"
+        android:text="@string/about_interpret_activity_description" />
+
+    <LinearLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <include layout="@layout/player_controls" />
+    </LinearLayout>
+
+
+</RelativeLayout>

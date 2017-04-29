@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="descriptionBoxPadding">16dp</dimen>
+    <dimen name="buttonMargin">25dp</dimen>
+    <dimen name="bigTextMarginTop">15dp</dimen>
+    <dimen name="bigTextSize">25dp</dimen>
+    <dimen name="descTextPadding">20dp</dimen>
+    <dimen name="interpretImageSizes">160dp</dimen>
+    <dimen name="SongImageSizes">200dp</dimen>
+    <dimen name="interpretTopBottomMargin">35dp</dimen>
+    <dimen name="albumsHeaderPadding">10dp</dimen>
+    <dimen name="albumsHeaderTextSize">20dp</dimen>
+    <dimen name="cdImageMargin">20dp</dimen>
+    <dimen name="cdImageDimens">80dp</dimen>
+    <dimen name="trackTextSize">10sp</dimen>
+    <dimen name="trackTextMarginBottom">5dp</dimen>
+    <dimen name="trackPadding">10dp</dimen>
+    <dimen name="timeLeftRightMargin">15dp</dimen>
+    <dimen name="playerBottomPadding">8dp</dimen>
+    <dimen name="playerEdgeHeight">3dp</dimen>
+    <dimen name="playerEdgeMarginBottom">10dp</dimen>
+    <dimen name="dividerMarginsLeftRight">25dp</dimen>
+    <dimen name="dividerMarginBottom">10dp</dimen>
+    <dimen name="dividerMarginTop">5dp</dimen>
+    <dimen name="dividerHeight">1dp</dimen>
+    <dimen name="smallButtonSizes">20dp</dimen>
+    <dimen name="mediumButtonSizes">35dp</dimen>
+    <dimen name="mediumButtonSideMargin">50dp</dimen>
+    <dimen name="bigButtonSideMargin">10dp</dimen>
+    <dimen name="bigButtonSizes">55dp</dimen>
+
+
+
+
+
+
+</resources>
